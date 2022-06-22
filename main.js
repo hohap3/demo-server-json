@@ -35,8 +35,6 @@ router.render = (req, res) => {
   if (req.method === 'GET' && totalCountRows) {
     const queryParams = queryString.parse(req._parsedUrl.query);
 
-    console.log(queryParams);
-
     const responseData = {
       data: res.locals.data,
       pagination: {
@@ -54,6 +52,7 @@ router.render = (req, res) => {
 
 // Use default router
 server.use('/api', router);
-server.listen(3000, () => {
+const PORT = process.env.PORT || 3000;
+server.listen(PORT, () => {
   console.log('JSON Server is running');
 });
