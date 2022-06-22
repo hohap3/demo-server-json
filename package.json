@@ -1,6 +1,7 @@
 {
   "type": "module",
   "dependencies": {
+    "@faker-js/faker": "^7.3.0",
     "json-server": "^0.17.0",
     "query-string": "^7.1.1"
   },
@@ -11,7 +12,6 @@
   "author": "phuc",
   "license": "MIT",
   "devDependencies": {
-    "@faker-js/faker": "^7.3.0",
     "nodemon": "^2.0.16"
   },
   "scripts": {
