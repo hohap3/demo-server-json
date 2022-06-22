@@ -1,0 +1,48 @@
+@baseURL = http://localhost:3000/api
+
+@sourceName = products
+
+# @name getAllProducts
+GET {{baseURL}}/{{sourceName}}
+###
+
+# @name filterProduct
+GET {{baseURL}}/{{sourceName}}?_page=1&_limit=10
+
+# @name AddAProduct
+
+###
+
+POST {{baseURL}}/{{sourceName}}
+Content-Type:application/json
+
+{
+   "categoryID": "c56916a4-c511-4dd3-93d0-cd35845c14c4",
+    "productName": "Awesome Steel Pants",
+    "productPrice": 560,
+    "description": "New range of formal shirts are designed keeping you in mind. With fits and styling that will make you stand apart",
+    "imageUrl": "https://loremflickr.com/640/480",
+    "color": "#fcf41f"
+}
+
+
+###
+
+# @name UpdateAProduct
+
+PATCH {{baseURL}}/{{sourceName}}/eMzEylf
+Content-Type: application/json
+
+{
+  "productName": "Awesome Steel Pants Update",
+  "productPrice": 600
+}
+
+###
+
+# @name DeleteAProduct
+DELETE {{baseURL}}/{{sourceName}}/3
+Content-Type: application/json
+
+###
+

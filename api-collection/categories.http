@@ -1,0 +1,12 @@
+@baseURL = http://localhost:3000/api
+
+@sourceName = categories
+
+# Get category List
+GET {{baseURL}}/{{sourceName}}
+
+###
+
+# Get category By ID
+GET {{baseURL}}/{{sourceName}}/8051d06b-b3d6-489c-9641-18bacd40ac5e
+

@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "query-string": "^7.1.1"
+  },
+  "name": "demo-json",
+  "version": "1.0.0",
+  "description": "demo json-server",
+  "main": "main.js",
+  "author": "phuc",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^7.3.0",
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "dev": "nodemon main.js",
+    "start": "yarn generate-data && node main.js",
+    "generate-data": "node generate-data.js"
+  }
+}
